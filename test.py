@@ -14,18 +14,7 @@ model.eval()
 
 
 # These must match your label encoding order
-label_names = [
-    "epic_generator",
-    "ticket_splitter",
-    "priority_assessor",
-    "assignee_recommender",
-    "sprint_planner",
-    "dependency_mapper",
-    "status_updater",
-    "jira_sync_agent",
-    "meeting_note_parser",
-    "roadmap_updater"
-]
+label_names = ['assignee_recommender', 'dependency_mapper', 'epic_generator', 'jira_sync_agent', 'meeting_note_parser', 'priority_assessor', 'roadmap_updater', 'sprint_planner', 'status_updater', 'ticket_splitter']
 
 def predict_agent(goal: str, working_memory: str):
     input_text = goal + " | " + working_memory
@@ -40,8 +29,61 @@ def predict_agent(goal: str, working_memory: str):
     
     return pred_label, probs[0][pred_index].item()
 
-goal = "Turn our meeting into Jira tasks"
-working_memory = "Meeting notes: discussed UI polish, testing, release date"
+test_cases = [
+    {
+        "goal": "Create a plan to launch the new education app",
+        "working_memory": "",
+        "expected_agent": "epic_generator"
+    },
+    {
+        "goal": "Create a plan to launch the new fintech app",
+        "working_memory": "Epic: 'Fintech App Launch'",
+        "expected_agent": "ticket_splitter"
+    },
+    {
+        "goal": "Prioritize tasks for sprint 20",
+        "working_memory": "Tickets: UI revamp, backend refactor, load testing",
+        "expected_agent": "priority_assessor"
+    },
+    {
+        "goal": "Assign sprint tasks based on current load",
+        "working_memory": "Parsed tasks: auth bug, UI cleanup, dashboard chart",
+        "expected_agent": "assignee_recommender"
+    },
+    {
+        "goal": "Turn our team meeting into Jira action items",
+        "working_memory": "Meeting notes: deployment date, QA needed, update copy",
+        "expected_agent": "meeting_note_parser"
+    },
+    {
+        "goal": "Sync latest ticket updates with Jira",
+        "working_memory": "",
+        "expected_agent": "jira_sync_agent"
+    },
+    {
+        "goal": "Organize tasks for Sprint 15",
+        "working_memory": "Sprint 15: 10 slots open, 6 tasks available",
+        "expected_agent": "sprint_planner"
+    },
+    {
+        "goal": "Update roadmap based on completed tickets",
+        "working_memory": "Synced: 10 of 20 tasks complete",
+        "expected_agent": "roadmap_updater"
+    },
+    {
+        "goal": "Analyze blocking issues in Sprint 22",
+        "working_memory": "Dependency: Backend migration blocks analytics dashboard",
+        "expected_agent": "dependency_mapper"
+    },
+    {
+        "goal": "Update ticket statuses after team sync",
+        "working_memory": "Meeting outcome: UI done, QA started",
+        "expected_agent": "status_updater"
+    }
+]
 
-agent, confidence = predict_agent(goal, working_memory)
-print(f"Predicted agent: {agent} (confidence: {confidence:.2f})")
+for test in test_cases:
+    agent, confidence = predict_agent(test["goal"], test["working_memory"])
+    print(f"Goal: {test['goal'] } | Working Memory: {test['working_memory']}")
+    print(f"Predicted: {agent}, Expected: {test['expected_agent']}, ✅ Correct? {agent == test['expected_agent']}")
+    print("---")

@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trai
 import torch
 import pandas as pd
 
-df = pd.read_csv("pm_training_data.csv")
+df = pd.read_csv("pm_training_data_balanced.csv")
 
 # Combine goal and working_memory into one input text field
 df["input_text"] = df["goal"] + " | " + df["working_memory"]
@@ -24,6 +24,7 @@ tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
 # Preprocessing function
 def preprocess(batch):
     texts = [str(x) if x is not None else "" for x in batch["input_text"]]
+    print("Tokenizing texts:", texts)  # Debugging line
     return tokenizer(
         texts,
         truncation=True,
@@ -37,6 +38,7 @@ dataset_train = dataset_train.class_encode_column("correct_agent")
 dataset_val = dataset_val.class_encode_column("correct_agent")
 
 label_names = dataset_train.features["correct_agent"].names
+print("Label names:", label_names)  # Debugging line
 
 num_labels = len(label_names)
 
