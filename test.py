@@ -12,78 +12,38 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 model.to(device)
 model.eval()
 
-
 # These must match your label encoding order
 label_names = ['assignee_recommender', 'dependency_mapper', 'epic_generator', 'jira_sync_agent', 'meeting_note_parser', 'priority_assessor', 'roadmap_updater', 'sprint_planner', 'status_updater', 'ticket_splitter']
 
-def predict_agent(goal: str, working_memory: str):
-    input_text = goal + " | " + working_memory
-    inputs = tokenizer(input_text, return_tensors="pt", truncation=True, padding=True, max_length=128)
-    inputs = {k: v.to(device) for k, v in inputs.items()}
-    
+def predict_agent(action_item: str):
+    inputs = tokenizer(action_item, return_tensors="pt", truncation=True, padding=True, max_length=128)
+    inputs = {k: v.to(device) for k, v in inputs.items() if k != "token_type_ids"}
+
     with torch.no_grad():
         outputs = model(**inputs)
         probs = torch.nn.functional.softmax(outputs.logits, dim=-1)
         pred_index = torch.argmax(probs, dim=-1).item()
         pred_label = label_names[pred_index]
-    
+
     return pred_label, probs[0][pred_index].item()
 
 test_cases = [
-    {
-        "goal": "Create a plan to launch the new education app",
-        "working_memory": "",
-        "expected_agent": "epic_generator"
-    },
-    {
-        "goal": "Create a plan to launch the new fintech app",
-        "working_memory": "Epic: 'Fintech App Launch'",
-        "expected_agent": "ticket_splitter"
-    },
-    {
-        "goal": "Prioritize tasks for sprint 20",
-        "working_memory": "Tickets: UI revamp, backend refactor, load testing",
-        "expected_agent": "priority_assessor"
-    },
-    {
-        "goal": "Assign sprint tasks based on current load",
-        "working_memory": "Parsed tasks: auth bug, UI cleanup, dashboard chart",
-        "expected_agent": "assignee_recommender"
-    },
-    {
-        "goal": "Turn our team meeting into Jira action items",
-        "working_memory": "Meeting notes: deployment date, QA needed, update copy",
-        "expected_agent": "meeting_note_parser"
-    },
-    {
-        "goal": "Sync latest ticket updates with Jira",
-        "working_memory": "",
-        "expected_agent": "jira_sync_agent"
-    },
-    {
-        "goal": "Organize tasks for Sprint 15",
-        "working_memory": "Sprint 15: 10 slots open, 6 tasks available",
-        "expected_agent": "sprint_planner"
-    },
-    {
-        "goal": "Update roadmap based on completed tickets",
-        "working_memory": "Synced: 10 of 20 tasks complete",
-        "expected_agent": "roadmap_updater"
-    },
-    {
-        "goal": "Analyze blocking issues in Sprint 22",
-        "working_memory": "Dependency: Backend migration blocks analytics dashboard",
-        "expected_agent": "dependency_mapper"
-    },
-    {
-        "goal": "Update ticket statuses after team sync",
-        "working_memory": "Meeting outcome: UI done, QA started",
-        "expected_agent": "status_updater"
-    }
+    {"action_item": "create a new epic to cover our onboarding workflow", "expected_agent": "epic_generator"},
+    {"action_item": "split the 'payments' epic into smaller, trackable tickets", "expected_agent": "ticket_splitter"},
+    {"action_item": "review the current sprint backlog and prioritize tasks for delivery", "expected_agent": "priority_assessor"},
+    {"action_item": "assign the new bugs and feature requests to the dev team based on bandwidth", "expected_agent": "assignee_recommender"},
+    {"action_item": "extract any action items from yesterday’s meeting notes", "expected_agent": "meeting_note_parser"},
+    {"action_item": "make sure all updates from this sprint are reflected in Jira", "expected_agent": "jira_sync_agent"},
+    {"action_item": "plan out the upcoming sprint and slot in all high-priority tickets", "expected_agent": "sprint_planner"},
+    {"action_item": "update the roadmap to reflect completion of the user analytics module", "expected_agent": "roadmap_updater"},
+    {"action_item": "analyze sprint 22 to uncover blockers and task dependencies", "expected_agent": "dependency_mapper"},
+    {"action_item": "update the status of tickets after this morning’s sync call", "expected_agent": "status_updater"}
 ]
 
+
 for test in test_cases:
-    agent, confidence = predict_agent(test["goal"], test["working_memory"])
-    print(f"Goal: {test['goal'] } | Working Memory: {test['working_memory']}")
+    agent, confidence = predict_agent(test["action_item"])
+    print(f"Action Item: {test['action_item']}")
     print(f"Predicted: {agent}, Expected: {test['expected_agent']}, ✅ Correct? {agent == test['expected_agent']}")
     print("---")
+

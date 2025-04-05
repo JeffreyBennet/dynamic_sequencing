@@ -3,10 +3,11 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trai
 import torch
 import pandas as pd
 
-df = pd.read_csv("pm_training_data_balanced.csv")
+# Load the new action-only dataset
+df = pd.read_csv("pm_training_data_expanded.csv")
 
-# Combine goal and working_memory into one input text field
-df["input_text"] = df["goal"] + " | " + df["working_memory"]
+# Rename column to fit expected input format
+df["input_text"] = df["action_item"]
 
 # Shuffle and split the dataset
 df_shuffled = df.sample(frac=1, random_state=42).reset_index(drop=True)
@@ -19,12 +20,11 @@ dataset_train = Dataset.from_pandas(df_train[["input_text", "correct_agent"]])
 dataset_val = Dataset.from_pandas(df_val[["input_text", "correct_agent"]])
 
 # Tokenizer
-tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
 # Preprocessing function
 def preprocess(batch):
     texts = [str(x) if x is not None else "" for x in batch["input_text"]]
-    print("Tokenizing texts:", texts)  # Debugging line
     return tokenizer(
         texts,
         truncation=True,
@@ -32,15 +32,16 @@ def preprocess(batch):
         max_length=128
     )
 
-
 # Encode labels and tokenize
 dataset_train = dataset_train.class_encode_column("correct_agent")
 dataset_val = dataset_val.class_encode_column("correct_agent")
 
 label_names = dataset_train.features["correct_agent"].names
-print("Label names:", label_names)  # Debugging line
+print("Label names:", label_names)
 
 num_labels = len(label_names)
+
+print("Label names:", label_names)
 
 encoded_train = dataset_train.map(preprocess, batched=True)
 encoded_val = dataset_val.map(preprocess, batched=True)
@@ -61,7 +62,7 @@ training_args = TrainingArguments(
     save_strategy="epoch",
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
-    num_train_epochs=5,
+    num_train_epochs=10,
     weight_decay=0.01,
     logging_dir="./logs",
     load_best_model_at_end=True,

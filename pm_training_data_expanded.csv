@@ -1,0 +1,501 @@
+action_item,correct_agent
+Let's create epic now.,epic_generator
+Time to start new epic.,epic_generator
+Can you start new epic?,epic_generator
+add epic for new feature,epic_generator
+Please create epic.,epic_generator
+Can you create epic?,epic_generator
+Time to initiate epic creation.,epic_generator
+Can you add epic for new feature?,epic_generator
+Please add epic for new feature.,epic_generator
+Can you generate epic story?,epic_generator
+Let's add epic for new feature now.,epic_generator
+Let's create epic now.,epic_generator
+Time to add epic for new feature.,epic_generator
+Please start new epic.,epic_generator
+Let's create epic now.,epic_generator
+Let's start new epic now.,epic_generator
+Please start new epic.,epic_generator
+Time to create epic.,epic_generator
+Let's start new epic now.,epic_generator
+Please create epic.,epic_generator
+add epic for new feature,epic_generator
+Time to create epic.,epic_generator
+Can you create epic?,epic_generator
+initiate epic creation,epic_generator
+Time to start new epic.,epic_generator
+Let's create epic now.,epic_generator
+Can you generate epic story?,epic_generator
+Please start new epic.,epic_generator
+add epic for new feature,epic_generator
+Please add epic for new feature.,epic_generator
+Time to create epic.,epic_generator
+Please initiate epic creation.,epic_generator
+Time to create epic.,epic_generator
+Can you add epic for new feature?,epic_generator
+Please start new epic.,epic_generator
+Let's create epic now.,epic_generator
+Can you start new epic?,epic_generator
+Can you initiate epic creation?,epic_generator
+create epic,epic_generator
+Please initiate epic creation.,epic_generator
+Please generate epic story.,epic_generator
+Time to add epic for new feature.,epic_generator
+Can you generate epic story?,epic_generator
+Can you initiate epic creation?,epic_generator
+Let's start new epic now.,epic_generator
+Time to create epic.,epic_generator
+Time to start new epic.,epic_generator
+Time to start new epic.,epic_generator
+Time to start new epic.,epic_generator
+Can you add epic for new feature?,epic_generator
+Please convert epic to user stories.,ticket_splitter
+Please break down epic.,ticket_splitter
+Can you break down epic?,ticket_splitter
+Let's decompose epic now.,ticket_splitter
+generate tickets from epic,ticket_splitter
+Time to generate tickets from epic.,ticket_splitter
+Time to decompose epic.,ticket_splitter
+Time to decompose epic.,ticket_splitter
+Time to generate tickets from epic.,ticket_splitter
+Let's split epic into tasks now.,ticket_splitter
+Let's split epic into tasks now.,ticket_splitter
+Time to split epic into tasks.,ticket_splitter
+Time to decompose epic.,ticket_splitter
+Let's break down epic now.,ticket_splitter
+generate tickets from epic,ticket_splitter
+split epic into tasks,ticket_splitter
+Let's generate tickets from epic now.,ticket_splitter
+split epic into tasks,ticket_splitter
+Let's break down epic now.,ticket_splitter
+break down epic,ticket_splitter
+Can you generate tickets from epic?,ticket_splitter
+Time to generate tickets from epic.,ticket_splitter
+Please generate tickets from epic.,ticket_splitter
+decompose epic,ticket_splitter
+Time to decompose epic.,ticket_splitter
+Please break down epic.,ticket_splitter
+Let's split epic into tasks now.,ticket_splitter
+split epic into tasks,ticket_splitter
+Let's split epic into tasks now.,ticket_splitter
+Time to break down epic.,ticket_splitter
+split epic into tasks,ticket_splitter
+Let's convert epic to user stories now.,ticket_splitter
+Time to break down epic.,ticket_splitter
+Can you convert epic to user stories?,ticket_splitter
+Time to convert epic to user stories.,ticket_splitter
+split epic into tasks,ticket_splitter
+Please break down epic.,ticket_splitter
+Please break down epic.,ticket_splitter
+break down epic,ticket_splitter
+Please break down epic.,ticket_splitter
+Please split epic into tasks.,ticket_splitter
+Let's generate tickets from epic now.,ticket_splitter
+Can you convert epic to user stories?,ticket_splitter
+break down epic,ticket_splitter
+decompose epic,ticket_splitter
+Please split epic into tasks.,ticket_splitter
+Can you decompose epic?,ticket_splitter
+Time to generate tickets from epic.,ticket_splitter
+Time to convert epic to user stories.,ticket_splitter
+Please decompose epic.,ticket_splitter
+Time to assign tickets.,assignee_recommender
+Please allocate tasks.,assignee_recommender
+recommend assignee,assignee_recommender
+distribute workload,assignee_recommender
+Please allocate tasks.,assignee_recommender
+Please allocate tasks.,assignee_recommender
+recommend assignee,assignee_recommender
+Let's allocate tasks now.,assignee_recommender
+Can you recommend assignee?,assignee_recommender
+Please pick team members for tasks.,assignee_recommender
+allocate tasks,assignee_recommender
+Let's assign tickets now.,assignee_recommender
+Time to assign tickets.,assignee_recommender
+Please distribute workload.,assignee_recommender
+Let's distribute workload now.,assignee_recommender
+recommend assignee,assignee_recommender
+Please pick team members for tasks.,assignee_recommender
+Time to recommend assignee.,assignee_recommender
+Time to pick team members for tasks.,assignee_recommender
+Let's pick team members for tasks now.,assignee_recommender
+Let's distribute workload now.,assignee_recommender
+Time to distribute workload.,assignee_recommender
+Please recommend assignee.,assignee_recommender
+Time to recommend assignee.,assignee_recommender
+Can you assign tickets?,assignee_recommender
+Time to allocate tasks.,assignee_recommender
+Time to assign tickets.,assignee_recommender
+recommend assignee,assignee_recommender
+assign tickets,assignee_recommender
+Please assign tickets.,assignee_recommender
+Time to distribute workload.,assignee_recommender
+Let's recommend assignee now.,assignee_recommender
+Let's pick team members for tasks now.,assignee_recommender
+pick team members for tasks,assignee_recommender
+Please recommend assignee.,assignee_recommender
+Please allocate tasks.,assignee_recommender
+Can you pick team members for tasks?,assignee_recommender
+Let's assign tickets now.,assignee_recommender
+Can you pick team members for tasks?,assignee_recommender
+Let's assign tickets now.,assignee_recommender
+Let's pick team members for tasks now.,assignee_recommender
+Time to recommend assignee.,assignee_recommender
+Can you pick team members for tasks?,assignee_recommender
+allocate tasks,assignee_recommender
+Can you assign tickets?,assignee_recommender
+Please allocate tasks.,assignee_recommender
+Please recommend assignee.,assignee_recommender
+pick team members for tasks,assignee_recommender
+Let's pick team members for tasks now.,assignee_recommender
+Let's distribute workload now.,assignee_recommender
+Can you set up sprint board?,sprint_planner
+Can you set up sprint board?,sprint_planner
+Time to fill sprint backlog.,sprint_planner
+Please plan sprint.,sprint_planner
+Can you fill sprint backlog?,sprint_planner
+Time to plan sprint.,sprint_planner
+Let's schedule sprint now.,sprint_planner
+Please plan sprint.,sprint_planner
+Let's schedule sprint now.,sprint_planner
+Can you organize sprint 20?,sprint_planner
+Can you fill sprint backlog?,sprint_planner
+Can you organize sprint 20?,sprint_planner
+schedule sprint,sprint_planner
+Please set up sprint board.,sprint_planner
+Let's schedule sprint now.,sprint_planner
+set up sprint board,sprint_planner
+fill sprint backlog,sprint_planner
+Please organize sprint 20.,sprint_planner
+fill sprint backlog,sprint_planner
+set up sprint board,sprint_planner
+plan sprint,sprint_planner
+Let's plan sprint now.,sprint_planner
+Please organize sprint 20.,sprint_planner
+Can you organize sprint 20?,sprint_planner
+Please plan sprint.,sprint_planner
+Can you fill sprint backlog?,sprint_planner
+Time to plan sprint.,sprint_planner
+Let's plan sprint now.,sprint_planner
+Can you organize sprint 20?,sprint_planner
+Time to fill sprint backlog.,sprint_planner
+Let's set up sprint board now.,sprint_planner
+Time to schedule sprint.,sprint_planner
+Please organize sprint 20.,sprint_planner
+Time to organize sprint 20.,sprint_planner
+Please schedule sprint.,sprint_planner
+Can you plan sprint?,sprint_planner
+Please schedule sprint.,sprint_planner
+Can you plan sprint?,sprint_planner
+plan sprint,sprint_planner
+Let's organize sprint 20 now.,sprint_planner
+Let's fill sprint backlog now.,sprint_planner
+Please schedule sprint.,sprint_planner
+Let's organize sprint 20 now.,sprint_planner
+Let's plan sprint now.,sprint_planner
+Let's set up sprint board now.,sprint_planner
+Time to set up sprint board.,sprint_planner
+plan sprint,sprint_planner
+Let's fill sprint backlog now.,sprint_planner
+Let's set up sprint board now.,sprint_planner
+Can you plan sprint?,sprint_planner
+Time to connect tasks to jira.,jira_sync_agent
+Please sync to jira.,jira_sync_agent
+Please send backlog to jira.,jira_sync_agent
+update jira,jira_sync_agent
+sync to jira,jira_sync_agent
+Time to sync to jira.,jira_sync_agent
+Please push tickets to jira.,jira_sync_agent
+Can you send backlog to jira?,jira_sync_agent
+Can you send backlog to jira?,jira_sync_agent
+Please connect tasks to jira.,jira_sync_agent
+Can you send backlog to jira?,jira_sync_agent
+Let's update jira now.,jira_sync_agent
+Let's connect tasks to jira now.,jira_sync_agent
+Can you connect tasks to jira?,jira_sync_agent
+Time to update jira.,jira_sync_agent
+Please push tickets to jira.,jira_sync_agent
+Let's update jira now.,jira_sync_agent
+Please update jira.,jira_sync_agent
+Time to push tickets to jira.,jira_sync_agent
+Let's push tickets to jira now.,jira_sync_agent
+push tickets to jira,jira_sync_agent
+Please update jira.,jira_sync_agent
+Let's connect tasks to jira now.,jira_sync_agent
+Let's push tickets to jira now.,jira_sync_agent
+Let's push tickets to jira now.,jira_sync_agent
+Let's send backlog to jira now.,jira_sync_agent
+Time to sync to jira.,jira_sync_agent
+send backlog to jira,jira_sync_agent
+connect tasks to jira,jira_sync_agent
+Let's push tickets to jira now.,jira_sync_agent
+Let's send backlog to jira now.,jira_sync_agent
+connect tasks to jira,jira_sync_agent
+Can you update jira?,jira_sync_agent
+Please connect tasks to jira.,jira_sync_agent
+push tickets to jira,jira_sync_agent
+Time to sync to jira.,jira_sync_agent
+Can you update jira?,jira_sync_agent
+Please update jira.,jira_sync_agent
+Let's send backlog to jira now.,jira_sync_agent
+Time to send backlog to jira.,jira_sync_agent
+Let's update jira now.,jira_sync_agent
+Please push tickets to jira.,jira_sync_agent
+Can you send backlog to jira?,jira_sync_agent
+Let's connect tasks to jira now.,jira_sync_agent
+Time to update jira.,jira_sync_agent
+Let's push tickets to jira now.,jira_sync_agent
+Please sync to jira.,jira_sync_agent
+Let's connect tasks to jira now.,jira_sync_agent
+Can you send backlog to jira?,jira_sync_agent
+Let's push tickets to jira now.,jira_sync_agent
+Please mark task as in progress.,status_updater
+Let's adjust ticket status now.,status_updater
+Let's change status of story now.,status_updater
+Let's change status of story now.,status_updater
+Please update status.,status_updater
+Can you mark ticket done?,status_updater
+Please mark ticket done.,status_updater
+Let's mark task as in progress now.,status_updater
+Can you change status of story?,status_updater
+change status of story,status_updater
+Can you change status of story?,status_updater
+Time to adjust ticket status.,status_updater
+Please update status.,status_updater
+Can you adjust ticket status?,status_updater
+Time to adjust ticket status.,status_updater
+Can you change status of story?,status_updater
+update status,status_updater
+Can you mark ticket done?,status_updater
+mark ticket done,status_updater
+Please change status of story.,status_updater
+Can you mark ticket done?,status_updater
+Can you adjust ticket status?,status_updater
+Let's update status now.,status_updater
+Please mark task as in progress.,status_updater
+mark task as in progress,status_updater
+Let's mark task as in progress now.,status_updater
+adjust ticket status,status_updater
+Please change status of story.,status_updater
+Let's update status now.,status_updater
+Can you adjust ticket status?,status_updater
+Can you mark ticket done?,status_updater
+mark ticket done,status_updater
+Let's mark ticket done now.,status_updater
+Let's update status now.,status_updater
+Let's mark task as in progress now.,status_updater
+Time to mark ticket done.,status_updater
+Please mark ticket done.,status_updater
+Please update status.,status_updater
+adjust ticket status,status_updater
+Can you update status?,status_updater
+Time to update status.,status_updater
+Time to mark task as in progress.,status_updater
+Let's adjust ticket status now.,status_updater
+Let's change status of story now.,status_updater
+Let's adjust ticket status now.,status_updater
+Please update status.,status_updater
+Time to change status of story.,status_updater
+adjust ticket status,status_updater
+Can you update status?,status_updater
+Let's adjust ticket status now.,status_updater
+Can you adjust roadmap?,roadmap_updater
+Please reflect sprint on roadmap.,roadmap_updater
+Let's set roadmap goals now.,roadmap_updater
+Can you reflect sprint on roadmap?,roadmap_updater
+Time to set roadmap goals.,roadmap_updater
+Time to sync milestones.,roadmap_updater
+Can you set roadmap goals?,roadmap_updater
+Can you sync milestones?,roadmap_updater
+set roadmap goals,roadmap_updater
+Time to sync milestones.,roadmap_updater
+sync milestones,roadmap_updater
+Please adjust roadmap.,roadmap_updater
+set roadmap goals,roadmap_updater
+Time to set roadmap goals.,roadmap_updater
+Time to sync milestones.,roadmap_updater
+Let's sync milestones now.,roadmap_updater
+sync milestones,roadmap_updater
+Let's sync milestones now.,roadmap_updater
+Let's set roadmap goals now.,roadmap_updater
+Can you update roadmap?,roadmap_updater
+Please sync milestones.,roadmap_updater
+set roadmap goals,roadmap_updater
+adjust roadmap,roadmap_updater
+Can you set roadmap goals?,roadmap_updater
+Let's adjust roadmap now.,roadmap_updater
+Let's adjust roadmap now.,roadmap_updater
+Can you sync milestones?,roadmap_updater
+Time to sync milestones.,roadmap_updater
+Please reflect sprint on roadmap.,roadmap_updater
+Can you set roadmap goals?,roadmap_updater
+Let's update roadmap now.,roadmap_updater
+Let's set roadmap goals now.,roadmap_updater
+Please reflect sprint on roadmap.,roadmap_updater
+Time to adjust roadmap.,roadmap_updater
+Please update roadmap.,roadmap_updater
+Let's update roadmap now.,roadmap_updater
+Let's set roadmap goals now.,roadmap_updater
+Time to adjust roadmap.,roadmap_updater
+Time to adjust roadmap.,roadmap_updater
+Time to set roadmap goals.,roadmap_updater
+Please sync milestones.,roadmap_updater
+Let's adjust roadmap now.,roadmap_updater
+Let's reflect sprint on roadmap now.,roadmap_updater
+adjust roadmap,roadmap_updater
+Time to adjust roadmap.,roadmap_updater
+Can you update roadmap?,roadmap_updater
+set roadmap goals,roadmap_updater
+Let's sync milestones now.,roadmap_updater
+adjust roadmap,roadmap_updater
+Time to sync milestones.,roadmap_updater
+Time to analyze meeting notes.,meeting_note_parser
+Can you get tasks from meeting?,meeting_note_parser
+Time to extract action items from meeting.,meeting_note_parser
+Can you summarize meeting items?,meeting_note_parser
+Please get tasks from meeting.,meeting_note_parser
+Can you analyze meeting notes?,meeting_note_parser
+Can you extract action items from meeting?,meeting_note_parser
+parse notes,meeting_note_parser
+Please parse notes.,meeting_note_parser
+extract action items from meeting,meeting_note_parser
+Can you parse notes?,meeting_note_parser
+Please summarize meeting items.,meeting_note_parser
+Time to analyze meeting notes.,meeting_note_parser
+Please extract action items from meeting.,meeting_note_parser
+Can you parse notes?,meeting_note_parser
+Time to parse notes.,meeting_note_parser
+Time to get tasks from meeting.,meeting_note_parser
+Time to extract action items from meeting.,meeting_note_parser
+Please extract action items from meeting.,meeting_note_parser
+Please summarize meeting items.,meeting_note_parser
+Time to extract action items from meeting.,meeting_note_parser
+Let's parse notes now.,meeting_note_parser
+Please parse notes.,meeting_note_parser
+Can you parse notes?,meeting_note_parser
+Let's analyze meeting notes now.,meeting_note_parser
+extract action items from meeting,meeting_note_parser
+Let's summarize meeting items now.,meeting_note_parser
+analyze meeting notes,meeting_note_parser
+analyze meeting notes,meeting_note_parser
+parse notes,meeting_note_parser
+Please parse notes.,meeting_note_parser
+Let's extract action items from meeting now.,meeting_note_parser
+Time to parse notes.,meeting_note_parser
+Please analyze meeting notes.,meeting_note_parser
+Can you parse notes?,meeting_note_parser
+summarize meeting items,meeting_note_parser
+Time to extract action items from meeting.,meeting_note_parser
+Time to parse notes.,meeting_note_parser
+Please parse notes.,meeting_note_parser
+analyze meeting notes,meeting_note_parser
+Let's get tasks from meeting now.,meeting_note_parser
+extract action items from meeting,meeting_note_parser
+Time to analyze meeting notes.,meeting_note_parser
+Time to analyze meeting notes.,meeting_note_parser
+Let's summarize meeting items now.,meeting_note_parser
+Let's summarize meeting items now.,meeting_note_parser
+Time to summarize meeting items.,meeting_note_parser
+Please get tasks from meeting.,meeting_note_parser
+Time to analyze meeting notes.,meeting_note_parser
+Please get tasks from meeting.,meeting_note_parser
+map dependencies,dependency_mapper
+Let's map dependencies now.,dependency_mapper
+Let's analyze ticket dependencies now.,dependency_mapper
+Let's analyze ticket dependencies now.,dependency_mapper
+Time to analyze ticket dependencies.,dependency_mapper
+Let's analyze ticket dependencies now.,dependency_mapper
+Time to find blockers.,dependency_mapper
+Please check prerequisites.,dependency_mapper
+Please map dependencies.,dependency_mapper
+Time to check prerequisites.,dependency_mapper
+Let's check prerequisites now.,dependency_mapper
+Let's discover task links now.,dependency_mapper
+discover task links,dependency_mapper
+Can you analyze ticket dependencies?,dependency_mapper
+Can you discover task links?,dependency_mapper
+Please find blockers.,dependency_mapper
+Time to find blockers.,dependency_mapper
+analyze ticket dependencies,dependency_mapper
+Let's analyze ticket dependencies now.,dependency_mapper
+map dependencies,dependency_mapper
+find blockers,dependency_mapper
+Let's find blockers now.,dependency_mapper
+find blockers,dependency_mapper
+Let's check prerequisites now.,dependency_mapper
+Time to find blockers.,dependency_mapper
+map dependencies,dependency_mapper
+Can you check prerequisites?,dependency_mapper
+find blockers,dependency_mapper
+discover task links,dependency_mapper
+Time to check prerequisites.,dependency_mapper
+map dependencies,dependency_mapper
+Please analyze ticket dependencies.,dependency_mapper
+Let's find blockers now.,dependency_mapper
+Time to discover task links.,dependency_mapper
+Please find blockers.,dependency_mapper
+Time to check prerequisites.,dependency_mapper
+Time to find blockers.,dependency_mapper
+map dependencies,dependency_mapper
+Time to discover task links.,dependency_mapper
+Let's map dependencies now.,dependency_mapper
+map dependencies,dependency_mapper
+Can you find blockers?,dependency_mapper
+Can you map dependencies?,dependency_mapper
+Can you analyze ticket dependencies?,dependency_mapper
+discover task links,dependency_mapper
+Please map dependencies.,dependency_mapper
+Let's check prerequisites now.,dependency_mapper
+find blockers,dependency_mapper
+Let's check prerequisites now.,dependency_mapper
+Can you map dependencies?,dependency_mapper
+Can you sort tickets by urgency?,priority_assessor
+Please sort tickets by urgency.,priority_assessor
+Can you reorder sprint tasks?,priority_assessor
+Please reorder sprint tasks.,priority_assessor
+Time to identify top priorities.,priority_assessor
+Let's identify top priorities now.,priority_assessor
+Time to sort tickets by urgency.,priority_assessor
+Let's identify top priorities now.,priority_assessor
+Let's prioritize tasks now.,priority_assessor
+Let's sort tickets by urgency now.,priority_assessor
+Time to reorder sprint tasks.,priority_assessor
+Time to prioritize tasks.,priority_assessor
+Time to reorder sprint tasks.,priority_assessor
+Let's prioritize tasks now.,priority_assessor
+Let's reorder sprint tasks now.,priority_assessor
+Please prioritize tasks.,priority_assessor
+Please reorder sprint tasks.,priority_assessor
+Time to rank backlog.,priority_assessor
+reorder sprint tasks,priority_assessor
+Let's sort tickets by urgency now.,priority_assessor
+identify top priorities,priority_assessor
+Let's identify top priorities now.,priority_assessor
+Time to prioritize tasks.,priority_assessor
+Can you reorder sprint tasks?,priority_assessor
+Let's reorder sprint tasks now.,priority_assessor
+Time to reorder sprint tasks.,priority_assessor
+Can you prioritize tasks?,priority_assessor
+Time to prioritize tasks.,priority_assessor
+Time to identify top priorities.,priority_assessor
+sort tickets by urgency,priority_assessor
+prioritize tasks,priority_assessor
+Time to prioritize tasks.,priority_assessor
+sort tickets by urgency,priority_assessor
+sort tickets by urgency,priority_assessor
+prioritize tasks,priority_assessor
+rank backlog,priority_assessor
+Please reorder sprint tasks.,priority_assessor
+Please prioritize tasks.,priority_assessor
+Let's prioritize tasks now.,priority_assessor
+Let's rank backlog now.,priority_assessor
+Please rank backlog.,priority_assessor
+Please sort tickets by urgency.,priority_assessor
+Let's prioritize tasks now.,priority_assessor
+Can you sort tickets by urgency?,priority_assessor
+Time to rank backlog.,priority_assessor
+Can you prioritize tasks?,priority_assessor
+Time to sort tickets by urgency.,priority_assessor
+Let's sort tickets by urgency now.,priority_assessor
+Let's sort tickets by urgency now.,priority_assessor
+prioritize tasks,priority_assessor
